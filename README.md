@@ -25,4 +25,5 @@ Status](https://api.travis-ci.org/winnerawan/juzamma_apps.svg?branch=master)](ht
  * Penyalinan tidak sah atas berkas ini, melalui media apapun sangat 
  * dilarang kepemilikan dan kerahasiaannya
  * Ditulis oleh Imam Sukhufi <imamsukhufi@gmail.com> Juni, 2017
+ */
 ```
