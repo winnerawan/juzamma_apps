@@ -105,7 +105,6 @@ dependencies {
     androidTestCompile "org.mockito:mockito-core:$rootProject.mockitoVersion"
     androidTestAnnotationProcessor "com.google.dagger:dagger-compiler:$rootProject.dagger2Version"
     compile 'javax.inject:javax.inject:1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     provided 'javax.annotation:jsr250-api:1.0'
 }
 
