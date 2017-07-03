@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50.0dip"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <include layout="@layout/toolbar" />
+
+            <LinearLayout
+                android:id="@+id/timeline"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginTop="20.0dip"
+                android:orientation="horizontal"
+                android:padding="14.0dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="35.0dip"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="175.0dip">
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="175.0dip"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:minWidth="3.0dip"
+                            android:progress="65"
+                            android:progressDrawable="@drawable/progress_drawable_vertical" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="175.0dip"
+                            android:orientation="vertical"
+                            android:weightSum="3.0">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0.0dip"
+                                android:layout_weight="1.0">
+
+                                <ImageView
+                                    android:id="@+id/radio1"
+                                    android:layout_width="12.0dip"
+                                    android:layout_height="12.0dip"
+                                    android:layout_weight="1.0"
+                                    android:src="@drawable/circle_green" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/radio2"
+                                android:layout_width="12.0dip"
+                                android:layout_height="12.0dip"
+                                android:layout_weight="1.0"
+                                android:src="@drawable/circle_green" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0.0dip"
+                                android:layout_weight="1.0">
+
+                                <ImageView
+                                    android:id="@+id/radio3"
+                                    android:layout_width="12.0dip"
+                                    android:layout_height="12.0dip"
+                                    android:layout_gravity="bottom"
+                                    android:src="@drawable/circle" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="25.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical"
+                    android:weightSum="3.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center|left|top"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Order Placed"
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2.0dip"
+                            android:text="Date: 01 Sept 2016 at 1:00 p.m"
+                            android:textColor="@color/sub_text"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center|left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dishpached"
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2.0dip"
+                            android:text="Date: 02 Sept 2016 at 5:00 p.m"
+                            android:textColor="@color/sub_text"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1.0"
+                        android:gravity="bottom|center|left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Waiting for Delivery"
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2.0dip"
+                            android:text="Astt.Date: 15 Sept 2016"
+                            android:textColor="@color/sub_text"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/date_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/timeline"
+                android:layout_marginTop="0.0dip"
+                android:background="@drawable/bg_stroke"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/divider" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

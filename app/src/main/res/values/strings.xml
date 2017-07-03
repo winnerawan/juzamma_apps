@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Juz Amma</string>
+    <!--App Message-->
+    <string name="api_retry_error">Please retry!</string>
+    <string name="api_default_error">Something wrong happened!</string>
+    <string name="some_error">Some Error Occurred!</string>
+    <string name="connection_error">Internet connection lost!</string>
+    <!--play store-->
+    <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
+    <string name="app_market_link">"market://details?id="</string>
+    <string name="mahasiswa">Mahasiswa</string>
+    <string name="take_survey">Take Survey</string>
+    <string name="menu_daftar_isi">Daftar isi</string>
+    <string name="beranda">Beranda</string>
+    <string name="menu_petunjuk">Petunjuk</string>
+    <string name="menu_tentang">Tentang</string>
+    <string name="action_search">Search</string>
+    <string name="search">Search</string>
+    <string name="about">Tentang</string>
+    <string name="info">
+Nama   : Imam Sukhufi\n
+Alamat : Bubakan, Tulakan, Pacitan\n
+Email  : imamsukhufi@gmail.com\n</string>
+</resources>

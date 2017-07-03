@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/fragment_surah"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="#fff2f3f4">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/root_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!--<include-->
+                <!--android:id="@+id/toolbar"-->
+                <!--layout="@layout/toolbar"/>-->
+
+
+            <LinearLayout
+                android:id="@+id/search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:background="@color/colorPrimary"
+                android:paddingBottom="16.0dip"
+                android:paddingTop="10.0dip">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:tag="sticky"
+                    ads:cardCornerRadius="4.0dip">
+
+                    <EditText
+                        android:id="@+id/searchtext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/searchbghome"
+                        android:drawableLeft="@drawable/ic_search"
+                        android:drawablePadding="6.0dip"
+                        android:hint="@string/search"
+                        android:lines="1"
+                        android:padding="10.0dip"
+                        android:tag="sticky" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:id="@id/categories"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/slider"-->
+                <!--android:layout_marginLeft="6.0dip"-->
+                <!--android:layout_marginRight="6.0dip"-->
+                <!--android:background="#ffffffff"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingBottom="10.0dip"-->
+                <!--android:paddingTop="10.0dip">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@id/tshirt0"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1.0"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@id/shirt"-->
+                        <!--android:layout_width="25.0dip"-->
+                        <!--android:layout_height="25.0dip"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginTop="6.0dip"-->
+                        <!--android:layout_weight="1.0"-->
+                        <!--android:src="@drawable/tshirt" />-->
+
+                    <!--<com.wolfsoft.one.shoppy.customfonts.MyTextView-->
+                        <!--android:id="@id/shirt1"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginTop="10.0dip"-->
+                        <!--android:layout_weight="1.0"-->
+                        <!--android:text="Tshirt"-->
+                        <!--android:textColor="@color/Tex"-->
+                        <!--android:textSize="12.0dip" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="1.0dip"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_marginBottom="6.0dip"-->
+                    <!--android:layout_marginTop="6.0dip"-->
+                    <!--android:background="@color/colordevider" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@id/jeans0"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1.0"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@id/jeans"-->
+                        <!--android:layout_width="25.0dip"-->
+                        <!--android:layout_height="25.0dip"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginTop="6.0dip"-->
+                        <!--android:layout_weight="1.0"-->
+                        <!--android:src="@drawable/jeans" />-->
+
+                    <!--<com.wolfsoft.one.shoppy.customfonts.MyTextView-->
+                        <!--android:id="@id/jeans1"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginTop="10.0dip"-->
+                        <!--android:layout_weight="1.0"-->
+                        <!--android:text="Jeans"-->
+                        <!--android:textColor="@color/Tex"-->
+                        <!--android:textSize="12.0dip" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="1.0dip"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_marginBottom="6.0dip"-->
+                    <!--android:layout_marginTop="6.0dip"-->
+                    <!--android:background="@color/colordevider" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@id/shoes0"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1.0"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@id/shoes"-->
+                        <!--android:layout_width="25.0dip"-->
+                        <!--android:layout_height="25.0dip"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginTop="6.0dip"-->
+                        <!--android:layout_weight="1.0"-->
+                        <!--android:src="@drawable/shoes" />-->
+
+                    <!--<com.wolfsoft.one.shoppy.customfonts.MyTextView-->
+                        <!--android:id="@id/shoes1"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginTop="10.0dip"-->
+                        <!--android:layout_weight="1.0"-->
+                        <!--android:text="Shoes"-->
+                        <!--android:textColor="@color/Tex"-->
+                        <!--android:textSize="12.0dip" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="1.0dip"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_marginBottom="6.0dip"-->
+                    <!--android:layout_marginTop="6.0dip"-->
+                    <!--android:background="@color/colordevider" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1.0"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@id/slippers"-->
+                        <!--android:layout_width="25.0dip"-->
+                        <!--android:layout_height="25.0dip"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginTop="6.0dip"-->
+                        <!--android:layout_weight="1.0"-->
+                        <!--android:src="@drawable/slippers" />-->
+
+                    <!--<com.wolfsoft.one.shoppy.customfonts.MyTextView-->
+                        <!--android:id="@id/slippers1"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginTop="10.0dip"-->
+                        <!--android:layout_weight="1.0"-->
+                        <!--android:text="Slippers"-->
+                        <!--android:textColor="@color/Tex"-->
+                        <!--android:textSize="12.0dip" />-->
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="1.0dip"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_marginBottom="6.0dip"-->
+                    <!--android:layout_marginTop="6.0dip"-->
+                    <!--android:background="@color/colordevider" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@id/goggles0"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1.0"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@id/goggles"-->
+                        <!--android:layout_width="25.0dip"-->
+                        <!--android:layout_height="25.0dip"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginTop="6.0dip"-->
+                        <!--android:layout_weight="1.0"-->
+                        <!--android:src="@drawable/goggles" />-->
+
+                    <!--<com.wolfsoft.one.shoppy.customfonts.MyTextView-->
+                        <!--android:id="@id/goggles1"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginTop="10.0dip"-->
+                        <!--android:layout_weight="1.0"-->
+                        <!--android:text="Goggles"-->
+                        <!--android:textColor="@color/Tex"-->
+                        <!--android:textSize="12.0dip" />-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <!--<HorizontalScrollView-->
+                <!--android:id="@id/horizontalview1"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/categories"-->
+                <!--android:layout_marginTop="16.0dip"-->
+                <!--android:background="#00000000"-->
+                <!--android:scrollbars="none">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<include layout="@layout/hslider1" />-->
+
+                    <!--<include layout="@layout/hslider2" />-->
+
+                    <!--<include layout="@layout/hslider3" />-->
+                <!--</LinearLayout>-->
+            <!--</HorizontalScrollView>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/surah"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/horizontalview1"-->
+                <!--android:layout_marginLeft="6.0dip"-->
+                <!--android:layout_marginTop="21.0dip"-->
+                <!--android:text="Grooming Products"-->
+                <!--android:textColor="@color/Tex"-->
+                <!--android:textSize="16.0dip" />-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@id/rv"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/groomingproducts"-->
+                <!--android:layout_marginTop="10.0dip" />-->
+
+            <!--<HorizontalScrollView-->
+                <!--android:id="@id/horizontalview2"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/rv"-->
+                <!--android:layout_marginTop="16.0dip"-->
+                <!--android:background="#00000000"-->
+                <!--android:scrollbars="none">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<include layout="@layout/h2slider1" />-->
+
+                    <!--<include layout="@layout/h2slider2" />-->
+
+                    <!--<include layout="@layout/h2slider3" />-->
+                <!--</LinearLayout>-->
+            <!--</HorizontalScrollView>-->
+
+            <!--<com.wolfsoft.one.shoppy.customfonts.MyTextView-->
+                <!--android:id="@id/trendingproducts"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/horizontalview2"-->
+                <!--android:layout_marginLeft="6.0dip"-->
+                <!--android:layout_marginTop="21.0dip"-->
+                <!--android:text="Tranding Products"-->
+                <!--android:textColor="@color/Tex"-->
+                <!--android:textSize="16.0dip" />-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@id/rv2"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/trendingproducts"-->
+                <!--android:layout_marginTop="10.0dip" />-->
+
+            <!--<com.wolfsoft.one.shoppy.customfonts.MyTextView-->
+                <!--android:id="@id/topbrands"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/rv2"-->
+                <!--android:layout_marginLeft="6.0dip"-->
+                <!--android:layout_marginTop="21.0dip"-->
+                <!--android:text="Top Brands"-->
+                <!--android:textColor="@color/Tex"-->
+                <!--android:textSize="16.0dip" />-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@id/rv3"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/topbrands"-->
+                <!--android:layout_marginBottom="25.0dip"-->
+                <!--android:layout_marginTop="10.0dip" />-->
+        </RelativeLayout>
+    </LinearLayout>
+    
+
+        <RelativeLayout
+            android:layout_below="@id/root_linear"
+            android:id="@+id/sticky_relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_below="@id/sticky_relative"
+                    android:id="@+id/recycler_surah"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="?actionBarSize"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+
+    
+    <!--<LinearLayout-->
+        <!--android:id="@id/botbar"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:background="@drawable/bot_bar_bg"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@id/home0"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginBottom="10.0dip"-->
+            <!--android:layout_marginTop="10.0dip"-->
+            <!--android:layout_weight="1.0"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:id="@id/home"-->
+                <!--android:layout_width="30.0dip"-->
+                <!--android:layout_height="30.0dip"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1.0"-->
+                <!--android:src="@drawable/homewhite" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@id/offer0"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginBottom="10.0dip"-->
+            <!--android:layout_marginTop="10.0dip"-->
+            <!--android:layout_weight="1.0"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:id="@id/offer"-->
+                <!--android:layout_width="30.0dip"-->
+                <!--android:layout_height="30.0dip"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1.0"-->
+                <!--android:src="@drawable/salewhite" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@id/fav0"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginBottom="10.0dip"-->
+            <!--android:layout_marginTop="10.0dip"-->
+            <!--android:layout_weight="1.0"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:id="@id/fav"-->
+                <!--android:layout_width="30.0dip"-->
+                <!--android:layout_height="30.0dip"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1.0"-->
+                <!--android:src="@drawable/heartwhite" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@id/bag0"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginBottom="10.0dip"-->
+            <!--android:layout_marginTop="10.0dip"-->
+            <!--android:layout_weight="1.0"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<com.wolfsoft.one.shoppy.customfonts.MyTextView-->
+                    <!--android:layout_width="20.0dip"-->
+                    <!--android:layout_height="20.0dip"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:layout_marginBottom="20.0dip"-->
+                    <!--android:layout_marginRight="6.0dip"-->
+                    <!--android:layout_marginTop="3.0dip"-->
+                    <!--android:background="@drawable/bagnumberbg"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="2"-->
+                    <!--android:textColor="@color/White"-->
+                    <!--android:visibility="visible" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@id/bag"-->
+                    <!--android:layout_width="30.0dip"-->
+                    <!--android:layout_height="30.0dip"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@drawable/bagwhite2" />-->
+            <!--</FrameLayout>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@id/noti0"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginBottom="10.0dip"-->
+            <!--android:layout_marginTop="10.0dip"-->
+            <!--android:layout_weight="1.0"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:id="@id/noti"-->
+                <!--android:layout_width="30.0dip"-->
+                <!--android:layout_height="30.0dip"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1.0"-->
+                <!--android:src="@drawable/noti" />-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<com.google.android.gms.ads.AdView-->
+        <!--android:id="@id/adView"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_above="@id/botbar"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--ads:adSize="MEDIUM_RECTANGLE"-->
+        <!--ads:adUnitId="@string/banner_ad_unit_id" />-->
+</RelativeLayout>
+    </RelativeLayout>

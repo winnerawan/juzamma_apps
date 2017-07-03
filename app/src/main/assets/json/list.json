@@ -1,0 +1,24 @@
+{
+  "status": 200,
+  "message": "OK!",
+  "result": [
+    {
+      "id": "594da44795f88743c1da8379",
+      "surah_id": 78,
+      "surah_name": "An Naba'",
+      "surah_desc": "Surat An-Naba' merupakan surat yang ke 78 dan surat pertama pada Juz 30 yang terdiri dari 40 ayat. An-Naba' yang berarti \"Berita Besar\" ini berisikan tentang Hari Kebangkitan dan kedasyatannya. Surat ini juga berisi tentang balasan bagi orang durhaka maupun bagi orang yang bertakwa. Selain itu Surat An-Naba' juga berisi perintah agar manusia untuk memilih jalan yang benar untuk menuju kepada Rabb-nya."
+    },
+    {
+      "id": "594da79195f88743c1da837a",
+      "surah_id": 79,
+      "surah_name": "An Nazi'at",
+      "surah_desc": "Surat ini merupakan Surat Makkiyah yang diturunkan di Mekkah. Surat An-Nazi'at merupakan surat yang ke-79 dan terdapat dalam Juz 30 yang terdiri dari 46 ayat. An-Nazi'at berarti Malaikat-Malaikat yang mencabut."
+    },
+    {
+      "id": "594da7ca95f88743c1da837b",
+      "surah_id": 80,
+      "surah_name": "Abasa",
+      "surah_desc": "Surat 'Abasa. Merupakan Surat Makkiyah karena Surat 'Abasa diturunkan di Mekkah. Surat Abasa ini merupakan surat yang ke 80 dan masuk dalam Juz 30 yang terdiri dari 42 ayat. Abasa berarti bermuka masam, Surat 'Abasa ini berisikan peringatan atau teguran kepada Nabi SAW. Selain itu juga berisi peringatan kepada manusia yang tidak mengetahui hakikat dirinya."
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/timeline"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                android:orientation="horizontal"
+                android:padding="14.0dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15.0dip"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="175.0dip">
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="175.0dip"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:minWidth="3.0dip"
+                            android:progress="65"
+                            android:progressDrawable="@drawable/progress_drawable_vertical" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="175.0dip"
+                            android:orientation="vertical"
+                            android:weightSum="3.0">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0.0dip"
+                                android:layout_weight="1.0">
+
+                                <ImageView
+                                    android:id="@+id/radio1"
+                                    android:layout_width="12.0dip"
+                                    android:layout_height="12.0dip"
+                                    android:layout_weight="1.0"
+                                    android:src="@drawable/circle_green" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/radio2"
+                                android:layout_width="12.0dip"
+                                android:layout_height="12.0dip"
+                                android:layout_weight="1.0"
+                                android:src="@drawable/circle_green" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="99dp"
+                    android:layout_marginLeft="25.0dip"
+                    android:orientation="vertical"
+                    android:weightSum="3.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center|left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Order Placed"
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2.0dip"
+                            android:text="Date: 01 Sept 2016 at 1:00 p.m"
+                            android:textColor="@color/sub_text"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
