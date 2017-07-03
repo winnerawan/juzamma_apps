@@ -3,9 +3,6 @@
 ![alt 
 tag](https://raw.githubusercontent.com/winnerawan/juzamma_apps/master/index.jpg)
 
-[![Build 
-Status](https://api.travis-ci.org/winnerawan/juzamma_apps.svg?branch=master)](https://travis-ci.org/winnerawan/juzamma_apps)
-
 # LICENSE
 
 ```html
